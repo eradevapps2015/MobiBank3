@@ -11,7 +11,7 @@ angular.module('starter.controllers', [])
 
 
 	// *****Begin Show User ID**********
-
+/*
 	 document.addEventListener('deviceready', function () {
 	  $scope.uuid = $cordovaDevice.getUUID();
 	db = $cordovaSQLite.openDB({ name: "bankasiadb.db" });
@@ -30,12 +30,12 @@ angular.module('starter.controllers', [])
             console.error(err);
         });
  })
- 
+ */
  
 	// *****End Show User ID**********
-  	$rootScope.getServerIp='http://202.40.190.14:8084/'  //For Test
+  	//$rootScope.getServerIp='http://202.40.190.14:8084/'  //For Test
 	//$rootScope.getServerIp='http://10.11.201.43:8084/'  //For Own Pc
-	//$rootScope.getServerIp='http://202.40.178.58/'  //For Live
+	$rootScope.getServerIp='http://202.40.178.58/'  //For Live
 	
 
 	//	$scope.user = { uname:'era@mybank.com'};
@@ -224,11 +224,11 @@ angular.module('starter.controllers', [])
 							}); 
 												
 													 
-								//$state.go('app.welcome');
+								$state.go('app.welcome');
 								
 								
 								//*************Begin Save User ID************
-								
+								/*
 										 var query = "SELECT user_id FROM useridinfo where user_id=?";
 										  $cordovaSQLite.execute(db, query,[user.uname]).then(function(res) {
 											if(res.rows.length > 0) {			
@@ -288,7 +288,7 @@ angular.module('starter.controllers', [])
 										   // console.error(err);
 											 alert("Error Method");
 										});
-								
+								*/
 								//***********End Save User ID****************
 								
 								
