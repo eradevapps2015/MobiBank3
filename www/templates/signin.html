@@ -1,0 +1,40 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+ <ion-view view-title="MobiBank">
+        <ion-content class="padding">
+			<div style="width: 300px; height: 10px;" class="spacer"></div>
+            <div style="line-height: 20px; background-color: rgb(255, 255, 255); text-align: center; vertical-align: center;">
+                <img style="vertical-align: center;" src="img/icon.png"/>
+            </div>
+            
+          <div class="list">            
+            <div class="item item-input-inset" style="border: none;">            
+                <label class="item-input-wrapper input-textfield-custom">
+                    <i class="icon ion-person placeholder-icon positive icon-person-custom"></i>
+                    <input type="text" placeholder="User ID" ng-model="user.uname" >
+                </label>
+            </div>
+            <div class="item item-input-inset" style="border: none;">
+                <label class="item-input-wrapper input-textfield-custom">
+                    <i class="icon ion-locked placeholder-icon positive"></i>
+                    <input type="password" placeholder="Password" ng-model="user.pass" >
+                </label>            
+            </div>
+          
+			<div>
+			 <button class="button button-block button-positive " style=" width: 80%;margin-left:10%;margin-right:10%;margin-top:20px;" ng-click="login(user)">
+                        <i class="icon-left ion-log-in icon-btn-custom"></i>&nbsp;Sign in
+                    </button>        
+			</div>
+			
+		
+			 
+				<div style="margin-top:30%">
+				</div>
+            
+          </div>
+		  </ion-content>
+      </ion-view>
