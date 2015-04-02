@@ -38,7 +38,7 @@ angular.module('starter.controllers', [])
 	$rootScope.getServerIp='http://202.40.178.58/'  //For Live
 	
 
-	//	$scope.user = { uname:'era@mybank.com'};
+		$scope.user = { uname:'serajul@bankasia.com.bd'};
 		
 
 			 $scope.login1 = function(user) {
