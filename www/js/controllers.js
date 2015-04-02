@@ -495,7 +495,7 @@ $scope.chat = Chats.get($stateParams.chatId);
   }
   
    $scope.btnTopUp = function () {
-	 $state.go('app.');
+	 $state.go('app.talkTimeRecharge');
   }
 
      $scope.btnStopChequeLeaf = function () {
