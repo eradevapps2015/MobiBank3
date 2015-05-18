@@ -33,9 +33,9 @@ angular.module('starter.controllers', [])
  */
  
 	// *****End Show User ID**********
-  	//$rootScope.getServerIp='http://202.40.190.14:8084/'  //For Test
+  	$rootScope.getServerIp='http://202.40.190.14:8084/'  //For Test
 	//$rootScope.getServerIp='http://10.11.201.43:8084/'  //For Own Pc
-	$rootScope.getServerIp='http://202.40.178.58/'  //For Live
+
 	
 
 		$scope.user = { uname:'serajul@bankasia.com.bd'};
